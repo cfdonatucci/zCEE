@@ -22,7 +22,7 @@
                     <remarks></remarks>
                     <applicationDatatype datatype="CHAR"/>
                 </field>
-                <field name="name" originalName="COM_NAME" included="Y" defaultValue="" isHex="false" path="inputData.name" codepageConversion="Y">
+                <field name="name" originalName="COM_NAME" included="N" defaultValue="" isHex="false" path="inputData.name" codepageConversion="Y">
                     <startPos>8</startPos>
                     <bytes>20</bytes>
                     <maxBytes>20</maxBytes>
