@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:message xmlns:ns2="http://www.ibm.com/ims/Transaction" transactionCode="" messageName="EDUFILOPO" direction="0" serviceType="CICS_COMM_AREA">
+    <message id="1" name="EDUFILOPO">
+        <segment id="1" name="COMMAREA" originalName="COMMAREA">
+            <field name="outputData" originalName="DFHCOMMAREA" included="Y" path="outputData">
+                <startPos>1</startPos>
+                <bytes>81</bytes>
+                <maxBytes>81</maxBytes>
+                <remarks></remarks>
+                <applicationDatatype datatype="STRUCT"/>
+                <field name="opCode" originalName="COM_OP" included="Y" defaultValue="" isHex="false" path="outputData.opCode" codepageConversion="Y">
+                    <startPos>1</startPos>
+                    <bytes>1</bytes>
+                    <maxBytes>1</maxBytes>
+                    <remarks></remarks>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="empNumb" originalName="COM_NUMB" included="Y" defaultValue="" isHex="false" path="outputData.empNumb" codepageConversion="Y">
+                    <startPos>2</startPos>
+                    <bytes>6</bytes>
+                    <maxBytes>6</maxBytes>
+                    <remarks></remarks>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="name" originalName="COM_NAME" included="Y" defaultValue="" isHex="false" path="outputData.name" codepageConversion="Y">
+                    <startPos>8</startPos>
+                    <bytes>20</bytes>
+                    <maxBytes>20</maxBytes>
+                    <remarks></remarks>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="address" originalName="COM_ADDRX" included="Y" defaultValue="" isHex="false" path="outputData.address" codepageConversion="Y">
+                    <startPos>28</startPos>
+                    <bytes>20</bytes>
+                    <maxBytes>20</maxBytes>
+                    <remarks></remarks>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="phone" originalName="COM_PHONE" included="Y" defaultValue="" isHex="false" path="outputData.phone" codepageConversion="Y">
+                    <startPos>48</startPos>
+                    <bytes>8</bytes>
+                    <maxBytes>8</maxBytes>
+                    <remarks></remarks>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="salary" originalName="COM_AMOUNT" included="Y" defaultValue="" isHex="false" path="outputData.salary" codepageConversion="Y">
+                    <startPos>56</startPos>
+                    <bytes>8</bytes>
+                    <maxBytes>8</maxBytes>
+                    <remarks></remarks>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="time" originalName="COM_HORA" included="Y" defaultValue="" isHex="false" path="outputData.time" codepageConversion="Y">
+                    <startPos>64</startPos>
+                    <bytes>8</bytes>
+                    <maxBytes>8</maxBytes>
+                    <remarks></remarks>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="errMsg" originalName="COM_ERRMSG" included="Y" defaultValue="" isHex="false" path="outputData.errMsg" codepageConversion="Y">
+                    <startPos>72</startPos>
+                    <bytes>10</bytes>
+                    <maxBytes>10</maxBytes>
+                    <remarks></remarks>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+            </field>
+        </segment>
+    </message>
+</ns2:message>

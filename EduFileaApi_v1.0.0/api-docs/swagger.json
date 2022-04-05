@@ -1,0 +1,273 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "",
+    "version" : "1.0.0",
+    "title" : "eduFilea_v1.0.0"
+  },
+  "host" : "argte01.1dc.com:50443",
+  "basePath" : "/eduFilea/v1.0.0",
+  "schemes" : [ "https", "http" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/add" : {
+      "post" : {
+        "tags" : [ "eduFilea_v1.0.0" ],
+        "operationId" : "postEduFilea_v1.0.02",
+        "parameters" : [ {
+          "name" : "Authorization",
+          "in" : "header",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "postEduFilea_v1.0.02_request",
+          "description" : "request body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/postEduFilea_v1.0.02_request"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/postEduFilea_v1.0.02_response_200"
+            }
+          }
+        }
+      }
+    },
+    "/del" : {
+      "post" : {
+        "tags" : [ "eduFilea_v1.0.0" ],
+        "operationId" : "postEduFilea_v1.0.01",
+        "parameters" : [ {
+          "name" : "Authorization",
+          "in" : "header",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "postEduFilea_v1.0.01_request",
+          "description" : "request body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/postEduFilea_v1.0.01_request"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/postEduFilea_v1.0.01_response_200"
+            }
+          }
+        }
+      }
+    },
+    "/inq" : {
+      "post" : {
+        "tags" : [ "eduFilea_v1.0.0" ],
+        "operationId" : "postEduFilea_v1.0.0",
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "postEduFilea_request",
+          "description" : "request body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/postEduFilea_request"
+          }
+        }, {
+          "name" : "Authorization",
+          "in" : "header",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "postEduFilea_v1.0.0_request",
+          "description" : "request body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/postEduFilea_v1.0.0_request"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/postEduFilea_v1.0.0_response_200"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "postEduFilea_v1.0.0_request" : {
+      "type" : "object",
+      "properties" : {
+        "payLoad" : {
+          "type" : "object",
+          "properties" : {
+            "empNumb" : {
+              "type" : "string",
+              "maxLength" : 6
+            }
+          }
+        }
+      }
+    },
+    "postEduFilea_v1.0.0_response_200" : {
+      "type" : "object",
+      "properties" : {
+        "payLoad" : {
+          "type" : "object",
+          "properties" : {
+            "opCode" : {
+              "type" : "string",
+              "maxLength" : 1
+            },
+            "empNumb" : {
+              "type" : "string",
+              "maxLength" : 6
+            },
+            "name" : {
+              "type" : "string",
+              "maxLength" : 20
+            },
+            "address" : {
+              "type" : "string",
+              "maxLength" : 20
+            },
+            "phone" : {
+              "type" : "string",
+              "maxLength" : 8
+            },
+            "salary" : {
+              "type" : "string",
+              "maxLength" : 8
+            },
+            "time" : {
+              "type" : "string",
+              "maxLength" : 8
+            },
+            "errMsg" : {
+              "type" : "string",
+              "maxLength" : 10
+            }
+          }
+        }
+      }
+    },
+    "postEduFilea_v1.0.01_request" : {
+      "type" : "object",
+      "properties" : {
+        "payLoad" : {
+          "type" : "object",
+          "properties" : {
+            "empNumb" : {
+              "type" : "string",
+              "maxLength" : 6
+            }
+          }
+        }
+      }
+    },
+    "postEduFilea_v1.0.01_response_200" : {
+      "type" : "object",
+      "properties" : {
+        "payLoad" : {
+          "type" : "object",
+          "properties" : {
+            "opCode" : {
+              "type" : "string",
+              "maxLength" : 1
+            },
+            "empNumb" : {
+              "type" : "string",
+              "maxLength" : 6
+            },
+            "errMsg" : {
+              "type" : "string",
+              "maxLength" : 10
+            }
+          }
+        }
+      }
+    },
+    "postEduFilea_v1.0.02_request" : {
+      "type" : "object",
+      "properties" : {
+        "payLoad" : {
+          "type" : "object",
+          "properties" : {
+            "empNumb" : {
+              "type" : "string",
+              "maxLength" : 6
+            },
+            "name" : {
+              "type" : "string",
+              "maxLength" : 20
+            },
+            "address" : {
+              "type" : "string",
+              "maxLength" : 20
+            },
+            "phone" : {
+              "type" : "string",
+              "maxLength" : 8
+            },
+            "salary" : {
+              "type" : "string",
+              "maxLength" : 8
+            }
+          }
+        }
+      }
+    },
+    "postEduFilea_v1.0.02_response_200" : {
+      "type" : "object",
+      "properties" : {
+        "payLoad" : {
+          "type" : "object",
+          "properties" : {
+            "opCode" : {
+              "type" : "string",
+              "maxLength" : 1
+            },
+            "empNumb" : {
+              "type" : "string",
+              "maxLength" : 6
+            },
+            "name" : {
+              "type" : "string",
+              "maxLength" : 20
+            },
+            "address" : {
+              "type" : "string",
+              "maxLength" : 20
+            },
+            "phone" : {
+              "type" : "string",
+              "maxLength" : 8
+            },
+            "salary" : {
+              "type" : "string",
+              "maxLength" : 8
+            },
+            "time" : {
+              "type" : "string",
+              "maxLength" : 8
+            },
+            "errMsg" : {
+              "type" : "string",
+              "maxLength" : 10
+            }
+          }
+        }
+      }
+    }
+  }
+}
