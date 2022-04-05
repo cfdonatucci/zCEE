@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<zosConnectApi xmlns="http://www.ibm.com/zosConnect/2.0/zosConnectApi" id="edufileaapi">
-    <apiSpec title="edufileaapi" basePath="/eduFilea" description="" version="1.0.0">
-        <path relativePath="/">
-            <method type="POST" zosConnectServiceRef="EduFilea" httpXformFile="api/POST/mapping.xml" operationId="postEduFilea"></method>
-        </path>
-        <apiDoc docType="SWAGGER">api-docs/swagger.json</apiDoc>
-    </apiSpec>
-</zosConnectApi>
